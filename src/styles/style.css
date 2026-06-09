@@ -1,0 +1,15 @@
+/* VARIABILI CSS */
+:root {
+    --bg-light-theme: #2596be;
+    --bg-dark-theme: #032f8a;
+    --bg-button-light: #ecc15b;
+    --bg-button-dark: #fcba21;
+    --border-light: #f69f7b;
+    --border-dark: #de5565;
+    --heading-light: #f23433;
+    --heading-dark: #a11a1a;
+    --text-body-light: #ffffff;
+    --text-dark: #1a1a1a;
+    --shadow-light: #ef7c46;
+    --shadow-dark: #e25b1d;
+}
