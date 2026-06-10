@@ -6,10 +6,66 @@
     --bg-button-dark: #fcba21;
     --border-light: #f69f7b;
     --border-dark: #de5565;
-    --heading-light: #f23433;
-    --heading-dark: #a11a1a;
+    --contrast-light: #f23433;
+    --contrast-dark: #a11a1a;
     --text-body-light: #ffffff;
-    --text-dark: #1a1a1a;
+    --text-body-dark: #1a1a1a;
     --shadow-light: #ef7c46;
     --shadow-dark: #e25b1d;
+}
+
+/* TAG ELEMENT */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ID */
+/* stile per l'header */
+#header {
+    background: var(--bg-light-theme);
+    border: 2px solid var(--border-light);
+}
+
+/* CLASS */
+/* stili all'interno dell'header */
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-naruto {
+    width: 350px;
+    margin: 10px;
+    filter: drop-shadow(0 0 15px var(--shadow-light));
+}
+
+.search-box {
+    background: var(--contrast-light);
+    border: 2px solid var(--border-light);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.search-box input[type="text"],
+.search-box input[type="button"] {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.search-box input[type="text"] {
+    background: inherit;
+    color: var(--text-body-light);
+}
+
+.search-box input[type="button"] {
+    background: var(--bg-button-light);
 }
