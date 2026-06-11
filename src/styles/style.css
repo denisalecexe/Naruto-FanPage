@@ -31,20 +31,23 @@ body {
 }
 
 /* CLASS */
-/* stili all'interno dell'header */
+/* stile container all'interno dell'header */
 .container-header {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    padding: 0 20px;
 }
 
+/* stile del logo della pagina */
 .logo-naruto {
     width: 350px;
     margin: 10px;
     filter: drop-shadow(0 0 15px var(--shadow-light));
 }
 
+/* stile del conainer contenente l'input text e l'input button */
 .search-box {
     background: var(--contrast-light);
     border: 2px solid var(--border-light);
@@ -55,13 +58,13 @@ body {
     width: 100%;
 }
 
+/* stili specifici per input text e input button */
 .search-box input[type="text"],
 .search-box input[type="button"] {
     outline: none;
     border: none;
     border-radius: 5px;
 }
-
 
 .search-box input[type="text"] {
     background: inherit;
@@ -71,4 +74,26 @@ body {
 
 .search-box input[type="button"] {
     background: var(--bg-button-light);
+}
+
+/* stile per il toggle */
+.toggle-theme {
+    display: flex;
+    flex-direction: row;
+    background: var(--contrast-light);
+    border: 2px solid var(--border-light);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Stile generico per le icone di Bootstrap dentro il toggle */
+.bi {
+    padding: 5px;
+    margin: 0 2px;
+    font-size: 1.2rem; /* ingrandisce leggermente le icone per renderle proporzionate */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
