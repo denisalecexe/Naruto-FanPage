@@ -78,22 +78,46 @@ body {
 
 /* stile per il toggle */
 .toggle-theme {
+    position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background: var(--contrast-light);
     border: 2px solid var(--border-light);
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 80px;
+    padding: 5px;
     margin: 10px;
     cursor: pointer;
+    width: 120px;
+}
+
+/* stile dell'indicatore del toggle */
+.toggle-indicator {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    top: -8px;
+    left: 2px;
+    border: 2px solid var(--border-dark);
+    background: var(--bg-dark-theme);
+    transition: transform 0.3s ease;
 }
 
 /* Stile generico per le icone di Bootstrap dentro il toggle */
 .bi {
-    padding: 5px;
     margin: 0 2px;
-    font-size: 1.2rem; /* ingrandisce leggermente le icone per renderle proporzionate */
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index:10;
+    color: var(--bg-button-dark);
+}
+
+.bi-brightness-low-fill {
+    font-size: 1.5rem;
+}
+
+.bi-moon-star-fill {
+    font-size: 1.2rem;
 }
